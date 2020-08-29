@@ -1,0 +1,12 @@
+{
+  "name": "calcCal",
+  "version": "1.0.0",
+  "description": "1- Entre o peso 2- Entre a altura 3- Indice de massa corporal = peso / altura²",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
