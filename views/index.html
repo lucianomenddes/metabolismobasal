@@ -11,11 +11,14 @@
     <h1>Calculadora Taxa Metabólica Basal</h1>
     <div class="container">
       <form id="formulario">
-        <label for="genero">SEXO</label>
-        <select name="genero" id="genero">
-          <option value="Feminino">Feminino</option>
-          <option value="Masculino">Masculino</option>
-        </select>
+        <p>
+          <label for="genero">SEXO</label>
+          <select name="genero" id="genero">
+            <option value="Feminino">Feminino</option>
+            <option value="Masculino">Masculino</option>
+          </select>
+        </p>
+
         <p>
           <label for="peso">PESO <small>( kg )</small></label>
           <input
@@ -24,6 +27,7 @@
             id="peso"
             step="0.01"
             min="0"
+            size="4"
             autofocus
             required
           />
@@ -36,6 +40,7 @@
             id="altura"
             step="0.01"
             min="0"
+            size="5"
             required
           />
         </p>
@@ -48,11 +53,12 @@
             id="idade"
             step="0.01"
             min="0"
+            size="4"
             required
           />
         </p>
         <p>
-          <button type="submit">Calcular!</button>
+          <button class="button" type="submit">Calcular!</button>
         </p>
       </form>
       <div class="resultado-container" id="resultado">

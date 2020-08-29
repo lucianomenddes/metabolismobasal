@@ -20,11 +20,11 @@ formulario.addEventListener('submit', function (event) {
 		 <li>Exercício regular : ${dados.ativo.toFixed(2)} cal</li>
 		 <li>Exercício 2horas por dia: ${dados.superAtivo.toFixed(2)} cal</li>
 	 </ul>
-	 <h4>Ganhar Peso</h4>
+	 <h2>Ganhar Peso</h2>
 	 <p>Para ganhar peso você deve consumir todos os dias ${
      dados.ganharPeso
    } cal</p>
-	 <h4>Perder Peso</h4>
+	 <h2>Perder Peso</h2>
 	 <p>Para perder peso você deve ter um consumo de até ${dados.perderPeso} cal</p>
   `;
   const resultado = document.getElementById('resultado');
