@@ -1,4 +1,4 @@
-# Calculadora de Indice de Massa corporal - Calorias
+# Calculadora Índice de Massa corporal - Calorias
 
 1- Entre o peso
 2- Entre a altura
