@@ -13,6 +13,9 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: white;
 }
+footer {
+  font-size: 12px;
+}
 img {
   display: block;
   margin-left: auto;
@@ -76,4 +79,7 @@ p {
 .button:active {
   border-top-color: #bcd2e0;
   background: #bcd2e0;
+}
+a {
+  color: white;
 }
