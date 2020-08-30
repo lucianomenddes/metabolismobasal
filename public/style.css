@@ -19,12 +19,25 @@ img {
   margin-right: auto;
   width: 10%;
 }
-h1 {
+ul {
+  margin: 0;
+  padding: 0;
   text-align: center;
+  list-style: none;
 }
-p,
+ul li {
+  padding: 2px 5px;
+}
+
+h1,
 h2 {
-  padding: 5px;
+  text-align: center;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb;
+}
+
+p {
+  padding: 15px;
+  text-align: center;
 }
 
 .button {

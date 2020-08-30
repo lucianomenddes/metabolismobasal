@@ -11,7 +11,8 @@ formulario.addEventListener('submit', function (event) {
   dados.basal,dados.sedentario,dados.light,dados.moderado,dados.ativo,
   dados.superAtivo,dados.ganharPeso,dados.perderPeso*/
   const elementosHtml = `
-	<h2>Seu Resultado foi:</h2>
+  <h2 style ="text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb;">Seu Resultado foi:</h2>
+  <p>
 	 <ul>
 		 <li>Metabolismo Basal : ${dados.basal.toFixed(2)} cal</li>
 		 <li>Sedentário controle remoto : ${dados.sedentario.toFixed(2)} cal</li>
@@ -19,12 +20,15 @@ formulario.addEventListener('submit', function (event) {
 		 <li>Exercício moderado: ${dados.moderado.toFixed(2)} cal</li>
 		 <li>Exercício regular : ${dados.ativo.toFixed(2)} cal</li>
 		 <li>Exercício 2horas por dia: ${dados.superAtivo.toFixed(2)} cal</li>
-	 </ul>
-	 <h2>Ganhar Peso</h2>
+   </ul>
+   </p>
+   <h2 style ="text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb;">Ganhar Peso</h2>
+  
 	 <p>Para ganhar peso você deve consumir todos os dias ${
      dados.ganharPeso
    } cal</p>
-	 <h2>Perder Peso</h2>
+   <h2 style ="text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb;">Perder Peso</h2>
+   
 	 <p>Para perder peso você deve ter um consumo de até ${dados.perderPeso} cal</p>
   `;
   const resultado = document.getElementById('resultado');
