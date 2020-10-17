@@ -138,10 +138,6 @@ a {
 
 
 @media screen and (max-width: 768px) {
-    body {
-        border: 1px solid yellow;
-    }
-
     h1,
     h2 {
         font-size: 1.1rem;
@@ -150,12 +146,10 @@ a {
 
     main {
         width: 90%;
-        border: 1px solid green;
     }
 
     form {
         width: 100%;
-        border: 1px solid red;
     }
 
     .button {
