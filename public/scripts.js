@@ -1,3 +1,15 @@
+const url = new URL(window.location);
+const locale = url.searchParams.get("language") || "pt-BR";
+const elements = document.querySelectorAll("[data-i18n]");
+let lang = "";
+if (locale == "es") {
+  lang = esLangConfig;
+}
+for (let element of elements) {
+  const key = element.getAttribute("data-i18n");
+  element.innerText = lang[key] || key;
+}
+
 const formulario = document.getElementById('formulario');
 formulario.addEventListener('submit', function (event) {
   event.preventDefault();
