@@ -4,7 +4,7 @@
 2- Entre a altura
 3- Indice de massa corporal = peso / altura²
 
-# Calculadora de Taxa Metabólica Basa
+# Calculadora de Taxa Metabólica Basal
 
 0 - idade
 1 - peso
