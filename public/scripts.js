@@ -23,7 +23,7 @@ formulario.addEventListener('submit', function (event) {
   dados.basal,dados.sedentario,dados.light,dados.moderado,dados.ativo,
   dados.superAtivo,dados.ganharPeso,dados.perderPeso*/
   const elementosHtml = `
-  <h2 style ="text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb;"></h2>
+  <h2 style ="text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb;">Seu Resultado foi:</h2>
   <p>
 	 <ul>
 		 <li>Metabolismo Basal : ${dados.basal.toFixed(2)} cal</li>
