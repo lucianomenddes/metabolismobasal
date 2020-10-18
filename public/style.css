@@ -1,163 +1,225 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+:root {
+  --purple: #322153;
+  --bg-body-color: #f0f0f5;
+  --bg-form-color: #ffffff;
+}
 
 *,
-html,
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+:before,
+:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
 body {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: #282828;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    color: white;
+  background: var(--bg-body-color);
+  font-family: "Ubuntu", sans-serif;
+  color: #322153;
+  max-width: 90vw;
+  margin: 0 auto;
+  font-size: 16px;
 }
-
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 50%;
+a {
+  text-decoration: none;
 }
-
-footer {
-    padding: 20px 0;
-    font-size: 12px;
-}
-
-footer a {
-    text-decoration: none;
-}
-
 img {
-    display: block;
-    margin: 0 auto;
-    max-width: 30%;
+  display: block;
+  max-width: 100%;
 }
 
 ul {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    list-style: none;
+  list-style: none;
 }
 
-ul li {
-    padding: 2px 5px;
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
 }
 
-h1,
-h2 {
-    text-align: center;
-    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb;
+header h1.title {
+  font-size: 3.5rem;
+  text-align: center;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb;
+  color: var(--purple);
 }
 
-p {
-    padding: 15px;
+header img.logo {
+  width: 9%;
+  height: auto;
 }
 
-p:last-child {
-    text-align: center;
+.container {
+  max-width: 70vw;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-between;
 }
 
-/* FORM STYLES */
-
-form {
-    width: 80%;
-    margin: 0 auto;
+form.form {
+  background: var(--bg-form-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2px 2px 10px 0px rgba(44, 44, 44, 0.15);
+  border-radius: 10px;
+  margin: auto;
+  padding: 1rem 4rem;
 }
 
-label {
-    width: 100%;
-    font-size: 1.1rem;
-    line-height: 1.8rem;
-    text-align: left;
+form.form fieldset {
+  border: none;
+  width: 90%;
 }
 
-input, select {
-    width: 100%;
-    height: 45px;
-    border-radius: 5px;
+form.form .field-group {
+  padding-top: 1rem;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form.form .field-group:first-child {
+  padding-top: 0.8rem;
+}
+
+form.form .field-group label[for="genero"] {
+  margin-right: 0.8rem;
+}
+
+.field-group label {
+  font-size: 1.1rem;
+}
+
+.field-group select {
+  border: none;
+  padding: 10px 5px;
+  appearance: none;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  font-family: monospace;
+  color: var(--purple);
+}
+
+.field-group input {
+  color: var(--purple);
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 10px 5px;
+  border: none;
+}
+
+form.form .field-btn {
+  padding-top: 2rem;
+  align-content: center;
 }
 
 .button {
-    width: 40%;
-    border-top: 1px solid #008fe8;
-    background: #65a9d7;
-    background: -webkit-gradient(
-            linear,
-            left top,
-            left bottom,
-            from(#5bbad4),
-            to(#65a9d7)
-    );
-    background: -webkit-linear-gradient(top, #5bbad4, #65a9d7);
-    background: -moz-linear-gradient(top, #5bbad4, #65a9d7);
-    background: -ms-linear-gradient(top, #5bbad4, #65a9d7);
-    background: -o-linear-gradient(top, #5bbad4, #65a9d7);
-    padding: 14.5px 29px;
-    -webkit-border-radius: 40px;
-
-    border-radius: 40px;
-    -webkit-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
-
-    box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
-    text-shadow: rgba(0, 0, 0, 0.4) 0 1px 0;
-    color: #000000;
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-    text-decoration: none;
-    vertical-align: middle;
-    transition: color .2s ease-in;
+  display: block;
+  border: none;
+  padding: 14.5px 29px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.3rem;
+  text-decoration: none;
+  background-color: #34cb79;
+  margin: 0.4rem auto;
+  transition: 0.3s all;
 }
-
 .button:hover {
-    border-top-color: #28597a;
-    background: #28597a;
-    color: #ccc;
-    cursor: pointer;
+  background-color: var(--purple);
 }
 
-.button:active {
-    border-top-color: #bcd2e0;
-    background: #bcd2e0;
+/* Resultado estilos */
+.resultado-container {
+  background-color: var(--bg-form-color);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px 0px rgba(44, 44, 44, 0.15);
+  width: 520px;
+  max-width: 520px;
+  margin: 0 auto;
 }
 
-a {
-    color: white;
+.resultado-container div.result-list {
+  margin-bottom: 0.6rem;
 }
 
+.resultado-container h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.2rem;
+  width: 100%;
+}
 
-@media screen and (max-width: 768px) {
-    h1,
-    h2 {
-        font-size: 1.1rem;
-        text-shadow: none;
-    }
+.resultado-container h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.2rem;
+}
 
-    main {
-        width: 90%;
-    }
+.resultado-container h3:last-child {
+  color: #000;
+}
 
-    form {
-        width: 100%;
-    }
+.resultado-container ul li {
+  margin-bottom: 0.1rem;
+}
 
-    .button {
-        width: 100%;
-        border-radius: 20px;
-    }
+.resultado-container ul li::before {
+  content: "\2192";
+  color: #34cb79;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+}
 
-    footer {
-        padding: 20px;
-    }
+.resultado-container p::before {
+  content: "\2192";
+  color: #34cb79;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+}
+
+/* Responsividade */
+@media (max-width: 800px) {
+  header {
+    display: flex;
+    justify-content: space-around;
+  }
+  header h1.title {
+    font-size: 2rem;
+  }
+  header img.logo {
+    width: 7%;
+  }
+
+  .container {
+    max-width: 80vw;
+    flex-direction: column;
+  }
+
+  form.form {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 415px) {
+  header h1.title {
+    font-size: 1.2rem;
+  }
+
+  .container {
+    max-width: 90vw;
+  }
+
+  .resultado-container {
+    width: 320px;
+    max-width: 320px;
+    word-wrap: break-word;
+  }
 }

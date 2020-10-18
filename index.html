@@ -1,77 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="./public/style.css" />
-    <title data-i18n="title">Calculadora de Taxa Metabólica Basal</title>
-  </head>
-  <body lang="pt-BR">
-    <img src="./public/images/calcCal.png" alt="calorias" class="center" />
-    <h1 data-i18n="title">Calculadora Taxa Metabólica Basal</h1>
-    <div class="container">
-      <form id="formulario">
-        <p>
-          <label for="genero" data-i18n="gender">SEXO</label>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./public/style.css" />
+  <title>Calculadora de Taxa Metabólica Basal</title>
+</head>
+
+<body lang="pt-BR">
+  <header>
+    <h1 class="title">Calculadora Taxa Metabólica Basal</h1>
+    <img src="./public/images/calcCal.png" alt="calorias" class="logo" />
+  </header>
+
+  <main class="container">
+    <form class="form" id="formulario">
+
+      <fieldset>
+        <div class="field-group">
+          <label for="genero">Sexo</label>
           <select name="genero" id="genero">
-            <option value="Feminino" data-i18n="genero_feminino">Feminino</option>
-            <option value="Masculino" data-i18n="genero_masculino">Masculino</option>
+            <option value="Feminino">Feminino</option>
+            <option value="Masculino">Masculino</option>
           </select>
-        </p>
+        </div>
 
-        <p>
-          <label for="peso" data-i18n="peso">PESO <small>( kg )</small></label>
-          <input
-            type="number"
-            name="peso"
-            id="peso"
-            step="0.01"
-            min="0"
-            size="4"
-            autofocus
-            required
-          />
-        </p>
-        <p>
-          <label for="altura" data-i18n="altura">ALTURA <small>( cm )</small></label>
-          <input
-            type="number"
-            name="altura"
-            id="altura"
-            step="0.01"
-            min="0"
-            size="5"
-            required
-          />
-        </p>
+        <div class="field-group">
+          <label for="peso">Peso <small>(kg)</small></label>
+          <input type="number" name="peso" id="peso" step="0.01" min="0" size="4" autofocus required />
+        </div>
 
-        <p>
-          <label for="idade" data-i18n="idade">IDADE <small>( anos )</small></label>
-          <input
-            type="number"
-            name="idade"
-            id="idade"
-            step="0.01"
-            min="0"
-            size="4"
-            required
-          />
-        </p>
-        <p>
-          <button class="button" type="submit" data-i18n="calcular">Calcular!</button>
-        </p>
-      </form>
-      <div class="resultado-container" id="resultado">
-        <!--Aparece as informações após o cálculo metabólico-->
-      </div>
+        <div class="field-group">
+          <label for="altura">Altura <small>(cm)</small></label>
+          <input type="number" name="altura" id="altura" step="0.01" min="0" size="5" required />
+        </div>
+
+        <div class="field-group">
+          <label for="idade">Idade <small>(anos)</small></label>
+          <input type="number" name="idade" id="idade" step="0.01" min="0" size="4" required />
+        </div>
+
+        <div class="field-btn">
+          <button class="button" type="submit">Calcular!</button>
+        </div>
+
+      </fieldset>
+
+    </form>
+
+    <div class="resultado-container" id="resultado">
+      <h2>Seu Resultado foi:</h2>
+      <!--Aparece as informações após o cálculo metabólico-->
     </div>
-    <footer>
-      <br>
-        <div data-i18n="referencia">Referências:</div></br>
-        <br> <a href="https://www.scielo.br/pdf/abcd/v29n3/pt_0102-6720-abcd-29-03-00185.pdf">https://www.scielo.br/pdf/abcd/v29n3/pt_0102-6720-abcd-29-03-00185.pdf</a> </br>
-        <br><a href="https://www.leighpeele.com/mifflin-st-jeor-calculator">https://www.leighpeele.com/mifflin-st-jeor-calculator</a></br>
-    </footer>
-    <script src="./public/locales/es/messages.js" type="text/javascript"></script>
+
+  </main>
+  <footer>
+    <br>
+    Referências:</br>
+    <br> <a href="https://www.scielo.br/pdf/abcd/v29n3/pt_0102-6720-abcd-29-03-00185.pdf">https://www.scielo.br/pdf/abcd/v29n3/pt_0102-6720-abcd-29-03-00185.pdf</a> </br>
+    <br><a href="https://www.leighpeele.com/mifflin-st-jeor-calculator">https://www.leighpeele.com/mifflin-st-jeor-calculator</a></br>
     <script src="./public/scripts.js" type="text/javascript"></script>
-  </body>
+  </footer>
+</body>
+
 </html>
