@@ -1,3 +1,5 @@
+[English](README_EN.md) | [Spanish](README_ES.md) | [French](README_FR.md)
+
 # Calculadora Índice de Massa corporal - Calorias
 
 1- Entre o peso
