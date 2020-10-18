@@ -1,10 +1,10 @@
-# Calculateur de l'indice de masse corporelle (IMC) - Calories
+# Calculateur de l'indice de masse corporelle - Calories
 
 1- Entrez le poids
 2- Entrez la hauteur
 3- Indice de masse corporelle = poids / taille²
 
-# Calculatrice du taux métabolique basal (BMR)
+# Calculatrice du taux métabolique basal
 
 Entrez les éléments suivants:
 
