@@ -6,7 +6,7 @@
 
 # Calculadora de tasa metabólica basal
 
-Ingrese los siguientes parámetros:
+Ingrese los siguientes parámetro:
 
 1 - Edad
 1 - Peso
