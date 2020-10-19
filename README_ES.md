@@ -6,13 +6,13 @@
 
 # Calculadora de tasa metabólica basal
 
-Ingrese los siguientes elementos:
+Ingrese los siguientes parámetros:
 
 1 - Edad
 1 - Peso
 2 - Altura
 3 - Tasa de ejercicio
-4 - Sexo (Masculino / Femenino)
+4 - Genero (Masculino / Femenino)
 
 Fórmula
 
