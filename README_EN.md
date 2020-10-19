@@ -12,10 +12,9 @@ Enter these following items:
 1 - Weight
 2 - Height
 3 - Rate of exercise
-4 - Sex (Male/Female)
+4 - Gender (Male/Female)
 
 Formula
-
 
 - https://www.scielo.br/pdf/abcd/v29n3/pt_0102-6720-abcd-29-03-00185.pdf
 - https://www.leighpeele.com/mifflin-st-jeor-calculator
