@@ -185,6 +185,14 @@ form.form .field-btn {
   width: 1em;
 }
 
+footer {
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+  width: auto;
+  height: auto;
+}
+
 /* Responsividade */
 @media (max-width: 800px) {
   header {
@@ -206,6 +214,7 @@ form.form .field-btn {
   form.form {
     margin-bottom: 3rem;
   }
+  
 }
 
 @media (max-width: 415px) {
