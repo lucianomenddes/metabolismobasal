@@ -23,3 +23,5 @@ Figure PNG
 
 - https://www.pngguru.com/free-transparent-background-png-clipart-mviok
 - https://www.pngegg.com/en/search?q=female+
+
+[Code of Conduct](https://github.com/adalbertobrant/metabolismobasal/blob/master/CODE_OF_CONDUCT.md)
