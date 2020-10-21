@@ -25,5 +25,10 @@ Figura PNG
 
 - https://www.pngegg.com/en/search?q=female+
 
+## Començando a contribuir 
+* Adicione seu nome no arquivo CONTRIBUTING.md de acordo com o modelo.
+Nome: [Seu nome](Github Link)
+Local: País e cidade
+Sobre: Uma pequena intro sobre você / cargo (Optional)
 
 Give some stars folks :)
